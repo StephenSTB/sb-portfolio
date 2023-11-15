@@ -1,0 +1,97 @@
+.resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*border: solid 1px gold;*/
+    background-color: white;
+    min-width: 100vw;
+    z-index: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10vh;
+}
+
+.resume-entry{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: var(--desktop-width);
+    /*border: solid 1px darkcyan;*/
+    padding-bottom: 7vh;
+}
+
+.underline{
+    border: 1px solid darkblue;
+    height: 3px;
+    background-color: darkblue;
+
+}
+
+.resume-entry-sub{
+    width: 600px;
+    /*border: solid 1px goldenrod*/
+}
+
+.subtitle{
+    margin-top: -2vh;
+    display:  flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(88, 84, 84);
+}
+
+.italic-entry{
+    font-style: italic;
+}
+
+.project-link{
+    color: blue;
+}
+
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.resume-skill{
+    height: 40px;
+    /*border: solid 1px green;*/
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.solidity-skill{
+    width: 90%;
+    height: 100%;
+    background-color: rgb(179, 70, 70)
+}
+
+.ipfs-skill{
+    width: 85%;
+    height: 100%;
+    background-color: rgb(179, 177, 70)
+}
+
+.typescript-skill{
+    width: 75%;
+    height: 100%;
+    background-color: rgb(71, 100, 155);
+}
+
+.react-skill{
+    width: 75%;
+    height: 100%;
+    background-color: rgb(71, 155, 78);
+}
+
+.node-skill{
+    width: 75%;
+    height: 100%;
+    background-color: rgb(155, 128, 71);
+}
+
+.css-skill{
+    width: 75%;
+    height: 100%;
+    background-color: rgb(131, 71, 155);
+}

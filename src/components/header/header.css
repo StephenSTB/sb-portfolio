@@ -1,12 +1,15 @@
 @import "../../App.css";
 .header{
-    min-width: 100%;
-    min-height: 100vh;
+    min-width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
     /*border: solid 1px green;*/
     display:  flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .header-main-text{
@@ -23,23 +26,53 @@
     font-size: 16pt;
     max-width: var(--desktop-width);
     text-align: center;
+    margin-top: 2vh;
+}
+
+.header-divider{
+    width: 500px;
+    border: solid 1px gray;
+    margin-top: 2vh;
 }
 
 .header-buttons{
     z-index: 1;
     max-width: var(--desktop-width);
-}
-
-.project{
-    width: 140px;
-    height: 40px;
-    border: solid 1px green;
+    margin-top: 2vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.project-button{
+    width: 140px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     color: white;
-    background-color: #808000;
+    background-color: #33B864;
+    text-decoration: none;
+    
+    border-radius: 10px;
+    font-size: 16pt;
+}
+
+.github-button{
+    width: 140px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: #242424;
+    text-decoration: none;
+    
+    border-radius: 10px;
+    font-size: 16pt;
 }
 
 .project:hover{
@@ -50,3 +83,59 @@
     max-width: 32px;
     max-height: 32px;
 }
+
+#github-img{
+    max-width: 32px;
+    max-height: 32px;
+    filter: invert(1)
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-down{
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+    top: 30vh
+}
+
+.header-down:hover{
+    background-color: #33B864;
+    transition: all .5s ease-in;
+}
+
+.down-image{
+    filter: invert(1)
+}
+
+/* Desktop */
+@media screen and (min-width: 900px) {
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+  .header{
+  }
+
+}
+
+/*Mobile*/
+@media screen and (max-width: 900px) 
+{
+	::-webkit-scrollbar {
+		width: 7px;
+	}
+
+}
+
+

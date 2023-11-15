@@ -4,7 +4,7 @@ import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, i
 
 import type { Container, Engine } from "tsparticles-engine";
 
-import book from "../../images/book.png"
+import {book, github, down_arrow} from "@sb-labs/images"
 
 import "./header.css"
 
@@ -38,11 +38,9 @@ export const Header = () =>{
                             move: {
                                 direction: "none",
                                 enable: true,
-                                outModes: {
-                                    default: "bounce",
-                                },
+                                
                                 random: false,
-                                speed: 6,
+                                speed: 4,
                                 straight: false,
                             },
                             number: {
@@ -59,7 +57,7 @@ export const Header = () =>{
                                 type: "circle",
                             },
                             size: {
-                                value: { min: 100, max: 400 },
+                                value: { min: 100, max: 500 },
                             },
                         },
                         detectRetina: true,
@@ -68,10 +66,13 @@ export const Header = () =>{
                 }
             />
             <div className="header-main-text">Stephen Bettis' Portfolio</div>
-            <div className="header-desc-text">I am a Typescript Web3 developer who uses fullstack techniques to create Dapps. This project is a resume to display my work.</div>
+            <div className="header-desc-text">I am a Typescript Web3 developer who uses fullstack techniques to create Decentralized Applications. This project is a resume to display my work.</div>
+            <div className="header-divider"/>
             <div className="header-buttons">
-                <a href="https://github.com/"><div className="project" ><img src={book} id="book-img"/>Project</div></a>
+                <a href="https://github.com/StephenSTB/sb-portfolio"><div className="project-button" ><img src={book} id="book-img"/>Project </div></a>
+                <a href="https://github.com/StephenSTB?tab=repositories"><div className="github-button" ><img src={github} id="github-img"/>Github </div></a>
             </div>
+            <a rel="noopener" href="#details"><div className="header-down"><img src={down_arrow} className="down-img"/></div></a>
         </header>
     )
 }
