@@ -7,9 +7,11 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "install-basic-components": "npm install ../basic-components/sb-labs-basic-components-0.1.0.tgz"
   },
   "dependencies": {
+    "@sb-labs/basic-components": "file:../basic-components/sb-labs-basic-components-0.1.0.tgz",
     "@sb-labs/images": "file:../images/sb-labs-images-1.0.0.tgz",
     "particles-bg": "^2.5.5",
     "react": "^18.2.0",
