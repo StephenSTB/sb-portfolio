@@ -1,0 +1,52 @@
+@import "../../App.css";
+.header{
+    min-width: 100%;
+    min-height: 100vh;
+    /*border: solid 1px green;*/
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-main-text{
+    color: white;
+    z-index: 1;
+    font-size: 46pt;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-desc-text{
+    color: white;
+    z-index: 1;
+    font-size: 16pt;
+    max-width: var(--desktop-width);
+    text-align: center;
+}
+
+.header-buttons{
+    z-index: 1;
+    max-width: var(--desktop-width);
+}
+
+.project{
+    width: 140px;
+    height: 40px;
+    border: solid 1px green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #808000;
+}
+
+.project:hover{
+    cursor: pointer;
+}
+
+#book-img{
+    max-width: 32px;
+    max-height: 32px;
+}
