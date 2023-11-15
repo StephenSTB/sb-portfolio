@@ -24,7 +24,7 @@ export const Header = () =>{
     }, []);
 
     return(
-        <header className="header">
+        <header id="header">
             <Particles 
                 id="tsparticles"
                 init={particlesInit}

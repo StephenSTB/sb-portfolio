@@ -2,7 +2,7 @@ import "./resume.css"
 
 export const Resume = () =>{
     return(
-        <div className="resume">
+        <div id="resume">
             <div className="resume-entry">
                 <h2>Education<div className="underline"/></h2>
                 <div className="resume-entry-sub">

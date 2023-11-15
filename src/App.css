@@ -12,7 +12,7 @@ html, body {
   
 }
 
-.App{
+#App{
   background-color: black;
 }
 
@@ -23,7 +23,7 @@ html, body {
 		width: 10px;
 	}
 
-  .App{
+  #App{
     position: absolute;
     top: 0;
     left: 0;

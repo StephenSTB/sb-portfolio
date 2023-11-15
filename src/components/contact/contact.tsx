@@ -9,16 +9,19 @@ export const Contact = () =>{
     const [name, setName] = useState("")
     const [message, setMessage] = useState("")
 
+    const d = new Date();
+
     const changeName = (e:any) => {
         setName(e.target.value);
     };
 
     const changeMessage = (e:any) => {
         setMessage(e.target.value);
+        
     };
 
     return(
-        <div className="contact">
+        <div id="contact">
             <div className="contact-title"><div className="contact-mail"><img src={send} className="mail-icon"/></div> &nbsp;&nbsp; To contact me via email fill in the form below.</div>
             <div className="name-section">
                 <div className="name-title">&nbsp;&nbsp;Name*</div> 
@@ -33,6 +36,9 @@ export const Contact = () =>{
             <div className="send-email"> <a href = {`mailto:stephenstb@live.com?subject=Resume Webpage Contact - ${name}&body=${message}`}>
                 Send Email
             </a></div>
+            <br/><br/><br/>
+            <div>&copy; SB Labs {d.getFullYear()}</div>
+            <br/>
         </div>
     )
 }
