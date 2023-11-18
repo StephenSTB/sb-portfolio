@@ -3,6 +3,8 @@
     width: 100vw;
     position:  fixed;
     top: 0;
+    left:0;
+    height: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,9 +27,23 @@
 }
 
 .bar-list{
-    width: 600px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+/* Desktop */
+@media screen and (min-width: 900px) {
+    .bar-list{
+        width: 600px;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 900px) 
+{
+	.bar-list{
+        width: 300px;
+    }
 }

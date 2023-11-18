@@ -12,19 +12,13 @@
     box-sizing: border-box;
 }
 
-.header-main-text{
-    color: white;
-    z-index: 1;
-    font-size: 46pt;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 
 .header-desc-text{
     color: white;
     z-index: 1;
     font-size: 16pt;
-    max-width: var(--desktop-width);
+    
     text-align: center;
     margin-top: 2vh;
 }
@@ -106,7 +100,7 @@ a {
     border-radius: 30px;
     background-color: white;
     position: relative;
-    top: 30vh
+    
 }
 
 .header-down:hover{
@@ -124,8 +118,25 @@ a {
 		width: 10px;
 	}
 
-  .header{
-  }
+  .header-main-text{
+        color: white;
+        z-index: 1;
+        font-size: 46pt;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+   .header-desc-text{
+        max-width: var(--desktop-width);
+   }
+
+   .header-divider{
+        width: 500px;
+   }
+
+   .header-down{
+        top: 30vh
+   }
 
 }
 
@@ -136,6 +147,30 @@ a {
 		width: 7px;
 	}
 
+    #header{
+        max-height: 100vh;
+    }
+
+    .header-main-text{
+        color: white;
+        z-index: 1;
+        font-size: 26pt;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    .header-desc-text{
+        max-width: var(--mobile-width);
+    }
+
+    .header-divider{
+        width: 250px;
+    }
+
+    .header-down{
+        top: 25vh;
+    }
 }
 
 

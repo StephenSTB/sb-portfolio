@@ -13,9 +13,9 @@
 
 .resume-entry{
     display: flex;
-    flex-direction: row;
+    
     justify-content: space-between;
-    width: var(--desktop-width);
+    
     /*border: solid 1px darkcyan;*/
     padding-bottom: 7vh;
 }
@@ -25,11 +25,6 @@
     height: 3px;
     background-color: darkblue;
 
-}
-
-.resume-entry-sub{
-    width: 600px;
-    /*border: solid 1px goldenrod*/
 }
 
 .subtitle{
@@ -94,4 +89,32 @@ h3{
     width: 75%;
     height: 100%;
     background-color: rgb(131, 71, 155);
+}
+
+/* Desktop */
+@media screen and (min-width: 900px) 
+{
+    .resume-entry{
+        width: var(--desktop-width);
+        flex-direction: row;
+    }
+
+    .resume-entry-sub{
+        width: 600px;
+        /*border: solid 1px goldenrod*/
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 900px) 
+{
+    .resume-entry{
+        width: var(--mobile-width);
+        flex-direction: column;
+    }
+
+    .resume-entry-sub{
+        width: 300px
+        /*border: solid 1px goldenrod*/
+    }
 }

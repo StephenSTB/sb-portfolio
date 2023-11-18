@@ -20,7 +20,7 @@ export const Resume = () =>{
                         <div className="subtitle"><p className="italic-entry">Crypto Art</p> <ul><li>Mar-April / Aug-Sept 2023</li></ul></div>
                         <p>Crypto Ricks is a Crypto Art NFT project built on Ethereum and IPFS utilizing VRF randomization to create 1000 unique NFTs. 
                             This project demonstrates the digital asset distribution protocol I developed to create strong ownership. Read more about this project 
-                            <a className="project-link" href="https://github.com/StephenSTB/stephens-dapp/tree/master/webpage">here.</a></p>
+                            &nbsp;<a className="project-link" href="https://github.com/StephenSTB/stephens-dapp/tree/master/webpage">here.</a></p>
                     </div>
                     <div className="resume-entry-sub">
                         <h2 className="main-subtitle">Stephens' Dapp</h2>
