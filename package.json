@@ -14,6 +14,7 @@
     "@sb-labs/basic-components": "file:../basic-components/sb-labs-basic-components-0.1.0.tgz",
     "@sb-labs/images": "file:../images/sb-labs-images-1.0.0.tgz",
     "particles-bg": "^2.5.5",
+    "pizzip": "^3.1.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-tsparticles": "^2.12.2",

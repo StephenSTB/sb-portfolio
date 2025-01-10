@@ -35,14 +35,16 @@ export const Contact = () =>{
     return(
         <div id="contact">
             <div className="contact-title"><div className="contact-mail"><img src={send} className="mail-icon"/></div> &nbsp;&nbsp; To contact me via email fill in the form below.</div>
-            <div className="name-section">
-                <div className="name-title">&nbsp;&nbsp;Name*</div> 
-                <div className="contact-entry-input"><Input theme="dark" size="small"onChange={changeName}/></div>
-            </div>
-            <br/>
-            <div className="name-section">
-                <div className="name-title">&nbsp;&nbsp;Message*</div> 
-                <div className="contact-entry-input"><Textarea theme="dark" size={textareaSize} onChange={changeMessage}/></div>
+            <div className="contact-form">
+                <div className="form-section">
+                    <div className="name-title">&nbsp;&nbsp;Name*</div> 
+                    <div className="contact-entry-input"><Input theme="dark" size="small"onChange={changeName}/></div>
+                </div>
+                <br/>
+                <div className="form-section">
+                    <div className="name-title">&nbsp;&nbsp;Message*</div> 
+                    <div className="contact-entry-input"><Textarea theme="dark" size={textareaSize} onChange={changeMessage}/></div>
+                </div>
             </div>
             <br/>
             <div className="send-email"> <a href = {`mailto:stephenstb@live.com?subject=Resume Webpage Contact - ${name}&body=${message}`}>

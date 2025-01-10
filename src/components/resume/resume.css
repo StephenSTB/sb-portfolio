@@ -56,7 +56,7 @@ h3{
 }
 
 .solidity-skill{
-    width: 90%;
+    width: 75%;
     height: 100%;
     background-color: rgb(179, 70, 70)
 }
@@ -68,7 +68,7 @@ h3{
 }
 
 .typescript-skill{
-    width: 75%;
+    width: 90%;
     height: 100%;
     background-color: rgb(71, 100, 155);
 }

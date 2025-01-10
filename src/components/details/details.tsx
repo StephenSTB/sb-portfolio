@@ -1,9 +1,16 @@
 import "./details.css"
 
 import self from "../../images/Self.svg"
-
+import { useEffect } from "react"
 
 export const Details = () =>{
+
+    useEffect(() =>{
+        fetch("../../ResumeJavascript.docx").then(resp => resp.arrayBuffer()).then(arr =>{
+            console.log(arr)
+        })
+    }, [])
+
     return(
         <div id="details">
             <div className="details-box">
@@ -18,15 +25,17 @@ export const Details = () =>{
                     <h2>Contact Details</h2>
                     <div className="contact-box">
                         <div className="details-contact">
-                            <p>SB Labs</p>
-                            <p>180 Fountain View Dr</p>
-                            <p>Ames, Iowa, 50010</p>
-                            <p>515-450-0780</p>
-                            <p>StephenSTB@live.com</p>
+                            <div>SB Labs</div>
+                            <div>180 Fountain View Dr</div>
+                            <div>Ames, Iowa, 50010</div>
+                            <div>515-450-0780</div>
+                            <div>StephenSTB@live.com</div>
                         </div>
+                        <br/>
                         
-                        <a href="../../ResumeJavascript.docx" download="Resume"><div className="resume-download">Download Resume</div></a>
+                        <a href="../ResumeJavascript.docx" download="Resume"><div className="resume-download">Download Resume</div></a>
                     </div>
+                    <br/>
                 </div>
             </div>
         </div>
